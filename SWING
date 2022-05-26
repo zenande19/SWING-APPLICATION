@@ -1,0 +1,25 @@
+import javax.swing.*;
+
+class computer {
+    public static void main(String[] arg) {
+        JPanel panel = new JPanel();
+        JFrame frame = new JFrame();
+        frame.setSize(100, 100);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.add(panel);
+        panel.setLayout(null);
+        JLabel label = new JLabel("IP ADDRESS");
+        label.setBounds(10,20,80,50);
+        panel.add(label);
+        JTextField ipaddressText =new JTextField(50);
+        ipaddressText.setBounds(10,100,165 ,25);
+        panel.add(ipaddressText);
+        JLabel amountLabel= new JLabel("amount");
+        amountLabel.setBounds(10,80,80,25);
+        panel.add(amountLabel);
+JTextField amountText= new JTextField(20);
+        amountText.setBounds(100,50,165,25);
+panel.add(amountText);
+    }
+}
